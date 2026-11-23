@@ -304,7 +304,7 @@ All memories are zero-filled before loading, and `0x0000` decodes as `HALT`, so 
 the end of a program stops the CPU safely.
 
 > **Separation in action.** In the Harvard system a STORE physically cannot reach instruction
-> memory: it has no write port. In the shared system program and data share one array, so a
+> memory: In the shared-memory architecture, there is no dedicated write port. Both program instructions and data reside in the same shared memory array.
 > STORE to `0x00`–`0x0F` *would* overwrite code.
 
 ---
