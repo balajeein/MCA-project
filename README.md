@@ -542,11 +542,11 @@ The full reasoning is in [`docs/decisions.md`](docs/decisions.md).
 
 | Member | GitHub | Area | Modules | Responsibilities |
 |---|---|---|---|---|
-| **Prakhar Srivastava** | [@Prakharsrivastava](https://github.com/CosmicGalactus) | CPU state | `register_file.v`, `program_counter.v` | 8 × 16 register file with R0 = 0, two read ports and synchronous write; program counter with enable for stall and halt |
-| **Rishav Dewan** | [@Rishavdewan](https://github.com/rish106-hub) | Processor core | `cpu.v` | Instruction decode, control signals, adder and address generation, `stall` handling, HALT logic |
-| **Soumen Dass** | [@Soumendass](https://github.com/Soumen-Dass-3002) | Memory control | `address_decoder.v`, `rw_control.v`, `io_reg.v` | Address map decoding, `addr_err`, write-enable routing, read-data selection, memory-mapped output |
-| **Pragya Kashyap** | [@Pragyakashyap](https://github.com/pragya238) | Harvard system and integration | `instruction_memory.v`, `data_memory.v`, `harvard_top.v`, `tb_harvard.v`, `programs/`, `Makefile`, docs | Separate instruction/data memories, Harvard top-level integration, self-checking testbench, test programs, build flow, diagrams, waveforms and documentation |
-| **Balajee** | [@Balajee](https://github.com/Balajeein) | Shared-memory system | `shared_memory.v`, `shared_mem_controller.v`, `shared_top.v`, `tb_shared.v` | Single-port shared memory, fetch/data phase controller with stall, shared top level, testbench and comparison |
+| **Prakhar Srivastava** | [@Prakharsrivastava](https://github.com/CosmicGalactus) | CPU Core & Register File 
+| **Rishav Dewan** | [@Rishavdewan](https://github.com/rish106-hub) | Core Memory & Instruction Fetch 
+| **Soumen Dass** | [@Soumendass](https://github.com/Soumen-Dass-3002) | Shared-Memory Baseline & Bus Arbitration 
+| **Pragya Kashyap** | [@Pragyakashyap](https://github.com/pragya238) | Test Programs, Simulation, Waveforms & Performance Analysis |
+| **Balajee** | [@Balajee](https://github.com/Balajeein) | Address Decoding, Memory-Mapped I/O & Harvard Integration 
 
 ---
 
